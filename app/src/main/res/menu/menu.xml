@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/whatsappFragment"
+        android:title="whatsapp"
+        android:icon="@drawable/whatsapp"
+
+        />
+    <item
+        android:id="@+id/facebookFragment"
+        android:title="facebook"
+        android:icon="@drawable/facebook"
+
+        />
+    <item
+        android:id="@+id/instagramFragment"
+        android:title="instagram"
+        android:icon="@drawable/instagram"
+       />
+</menu>

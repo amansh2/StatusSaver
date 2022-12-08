@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/whatsappFragment">
+
+    <fragment
+        android:id="@+id/whatsappFragment"
+        android:name="com.example.statussaver.WhatsappFragment"
+        android:label="fragment_whatsapp"
+        tools:layout="@layout/fragment_whatsapp" >
+        <action
+            android:id="@+id/action_whatsappFragment_to_instagramFragment"
+            app:destination="@id/instagramFragment" />
+        <action
+            android:id="@+id/action_whatsappFragment_to_facebookFragment"
+            app:destination="@id/facebookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/instagramFragment"
+        android:name="com.example.statussaver.InstagramFragment"
+        android:label="InstagramFragment" >
+        <action
+            android:id="@+id/action_instagramFragment_to_whatsappFragment"
+            app:destination="@id/whatsappFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/facebookFragment"
+        android:name="com.example.statussaver.FacebookFragment"
+        android:label="FacebookFragment" >
+        <action
+            android:id="@+id/action_facebookFragment_to_whatsappFragment"
+            app:destination="@id/whatsappFragment" />
+    </fragment>
+</navigation>
